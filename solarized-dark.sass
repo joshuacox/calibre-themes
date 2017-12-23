@@ -1,3 +1,9 @@
+$bgcolor: black
+$color: white
+$bordercolor: purple
+$bgcolormark: #ff0
+$colormark: #000
+
 article,
 aside,
 details,
@@ -52,8 +58,8 @@ dfn
   font-style: italic
 
 mark 
-  background: #ff0
-  color: #000
+  background: $bgcolormark
+  color: $colormark
 
 code,
 kbd,
@@ -171,14 +177,14 @@ h6
   font-weight: 700
 
 html 
-  background-color: #073642
-  color: #839496
+  background-color: $bgcolor
+  color: $color
 
 body 
-  background-color: #002b36
+  background-color: $bgcolor
   margin: 0 auto
   max-width: 23cm
-  border: 1pt solid #586e75
+  border: 1pt solid $bordercolor
   padding: 1em
 
 code 

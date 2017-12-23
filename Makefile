@@ -17,7 +17,6 @@ clean:
 
 clip:
 	-@cat ${OUTPUT_DARK_CSS}|xclip -i  -selection clipboard
-	-@cat ${OUTPUT_LIGHT_CSS}|xclip -i  -selection clipboard
 
 test:
 	sass -c ${SOLARIZED_DARK}
