@@ -3,6 +3,12 @@ $color: white
 $bordercolor: purple
 $bgcolormark: #ff0
 $colormark: #000
+$bgcolorbull: #303
+$colorbull: #0f0
+$anchorcolor: #ff00ff
+$anchorcolorbg: #009900
+$anchorcolorvisited: #ee11ee
+$anchorcolorhover: #ee88ee
 
 article,
 aside,
@@ -56,6 +62,16 @@ strong
 
 dfn 
   font-style: italic
+
+.bull
+  strong
+      font-weight: bold
+      background: $bgcolorbull
+      color: $colorbull
+
+.bull 
+  background: $bgcolorbull
+  color: $colorbull
 
 mark 
   background: $bgcolormark
@@ -192,13 +208,14 @@ code
   padding: 2px
 
 a 
-  color: #b58900
+  color: $anchorcolor
+  background-color: $anchorcolorbg
 
 a:visited 
-  color: #cb4b16
+  color: $anchorcolorvisited
 
 a:hover 
-  color: #cb4b16
+  color: $anchorcolorhover
 
 h1 
   color: #d33682
