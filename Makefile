@@ -5,8 +5,12 @@ SOLARIZED_LIGHT=solarized-light.sass
 OUTPUT_DARK_CSS=solarized-dark.css
 OUTPUT_LIGHT_CSS=solarized-light.css
 
-build:
+build:  ${OUTPUT_DARK_CSS} ${OUTPUT_LIGHT_CSS}
+
+${OUTPUT_DARK_CSS}:
 	sass ${SOLARIZED_DARK} ${OUTPUT_DARK_CSS}
+
+${OUTPUT_LIGHT_CSS}:
 	sass ${SOLARIZED_LIGHT} ${OUTPUT_LIGHT_CSS}
 
 clean:
@@ -15,7 +19,7 @@ clean:
 	-@rm -f ${OUTPUT_LIGHT_CSS}
 	-@rm -f ${OUTPUT_LIGHT_CSS}.map
 
-clip:
+clip: ${OUTPUT_DARK_CSS}
 	-@cat ${OUTPUT_DARK_CSS}|xclip -i  -selection clipboard
 
 test:

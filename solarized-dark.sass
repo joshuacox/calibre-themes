@@ -1,13 +1,15 @@
 $bgcolor: black
-$color: white
+$bgcolor2: #151511
+$color: #bbffbb
+$color2: #ff3333
 $bordercolor: purple
 $bgcolormark: #ff0
 $colormark: #000
 $bgcolorbull: #303
 $colorbull: #0f0
-$anchorcolor: #ff00ff
-$anchorcolorbg: #009900
-$anchorcolorvisited: #ee11ee
+$anchorcolor: #ff33ff
+$anchorcolorbg: #003300
+$anchorcolorvisited: #ee22ee
 $anchorcolorhover: #ee88ee
 
 article,
@@ -204,8 +206,13 @@ body
   padding: 1em
 
 code 
-  background-color: #073642
+  color: #efffef
+  background-color: #020202
   padding: 2px
+
+code.literal
+  color: black
+  background-color: lightyellow
 
 a 
   color: $anchorcolor
@@ -228,14 +235,15 @@ h6
   color: #859900
 
 pre 
-  background-color: #002b36
-  color: #839496
+  background-color: $bgcolor2
+  color: $color2
   border: 1pt solid #586e75
   padding: 1em
   box-shadow: 5pt 5pt 8pt #073642
 
 pre code 
-  background-color: #002b36
+  background-color: $bgcolor2
+  color: $color2
 
 h1 
   font-size: 2.8em
@@ -320,4 +328,10 @@ h6
   border-radius: 0.2em
   background-color: #859900
 
-
+div.note
+  background-color: $bgcolor2 !important
+  color: $color2
+ 
+div.note h2, div.note h3, div.tip h2, div.tip h3
+  background-color: $bgcolor2 !important
+  color: $color2
